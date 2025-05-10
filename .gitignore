@@ -1,0 +1,19 @@
+# Java
+/backend/target/
+/backend/.mvn/
+/backend/.settings/
+/backend/*.iml
+
+# Node
+/frontend/node_modules/
+/frontend/.expo/
+/frontend/.expo-shared/
+/frontend/web-build/
+
+# IDEs
+/backend/.idea/
+/frontend/.vscode/
+
+# Logs, OS
+*.log
+.DS_Store
