@@ -11,7 +11,9 @@ services:
       - "5432:5432"
 
   backend:
-    image: enerijunior/listacompras-backend:1.0.0
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     depends_on:
       - db
     environment:
@@ -22,7 +24,9 @@ services:
       - "8080:8080"
 
   frontend:
-    image: jrcosta/listacompras-frontend:1.0.0
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
     ports:
       - "19000:19000"  # túnel / metro
       - "19001:19001"  # LAN
